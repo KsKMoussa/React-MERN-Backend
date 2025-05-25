@@ -4,7 +4,7 @@ import { validarJWT } from '../middlewares/validar-jwt.js';
 import { getEventos,crearEventos,actualizarEventos,eliminarEventos } from '../controllers/events.js';
 import { check } from 'express-validator';
 import { validarCampos } from '../middlewares/validar-campos.js';
-import { isDate } from '../helpers/isdate.js';
+import { isDate } from '../helpers/isDate.js';
 
 /*
  Rutas de acceso  '/api/events'
