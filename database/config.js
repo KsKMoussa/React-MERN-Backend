@@ -7,7 +7,11 @@ const dbconection = async() => {
 
 try {
 
- mongoose.connect(process.env.DB_CNN);
+ mongoose.connect(process.env.DB_CNN, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    ssl: false // Solo para desarrollo
+  });
 
  console.log('Conectado a DB');
     
