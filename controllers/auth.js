@@ -122,6 +122,8 @@ try {
 
     res.json({
          ok: true,
+         name,
+         uid,
          msg: 'Renew del usuario',
          token
      })

@@ -141,8 +141,8 @@ const getEventos = async (req,res = response) => {
      
        const EventoEminado =  await EventoModel.findByIdAndDelete(eventoid)
 
-        res.status(500).json({
-            ok: false,
+        res.status(200).json({
+            ok: true,
             msg: 'Evento Eliminado',
             evento: EventoEminado 
         })
